@@ -12,6 +12,7 @@ class App extends Component {
   componentDidMount(){
     axios.get('https://randomuser.me/api/?results=25&nat=ca')
     .then((response) =>{
+      console.log(response)
       this.setState({
         employees: response.data.results
       })

@@ -1,4 +1,5 @@
 import React from "react";
+import EmployeeRow from "./EmployeeRow";
 
 function Table(props){
     return (
@@ -14,7 +15,7 @@ function Table(props){
     </tr>
   </thead>
   <tbody>
-    {props.employees.map((currEmployee) => <employeeRow employee={currEmployee} />)}
+    {props.employees.map((currEmployee) => <EmployeeRow employee={currEmployee} />)}
   </tbody>
 </table>
     )
