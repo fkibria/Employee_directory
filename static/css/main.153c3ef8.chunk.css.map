@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/navbar.css"],"names":[],"mappings":"AAIA,gBACI,8BAAuB,CAAvB,sBACJ","file":"main.153c3ef8.chunk.css","sourcesContent":[".navbar-brand {\r\n    justify-content: center;\r\n}\r\n\r\np {\r\n    justify-content: center;\r\n}"]}
