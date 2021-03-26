@@ -7,15 +7,15 @@ function Table(props){
   <thead>
     <tr>
       <th scope="col">Image</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Email</th>
-      <th scope="col">DOB</th>
+      <th scope="col" onClick={props.onFNameSort}>First</th>
+      <th scope="col" onClick={props.onLNameSort}>Last</th>
+      <th scope="col" onClick={props.onPhoneSort}>Phone</th>
+      <th scope="col" onClick={props.onEmailSort}>Email</th>
+      <th scope="col" onClick={props.onDOBSort}>DOB</th>
     </tr>
   </thead>
   <tbody>
-    {props.employees.map((currEmployee) => <EmployeeRow employee={currEmployee} />)}
+    {props.employees.map((currEmployee, i) => <EmployeeRow key={i} employee={currEmployee} />)}
   </tbody>
 </table>
     )
